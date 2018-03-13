@@ -1,0 +1,15 @@
+{
+  "SECRET_KEY": "a6j(f2zz(4hyc)=$ja^i!zf^$#-eoap_3=f7arm4!(^6hrv5io",
+  "DEBUG": true,
+  "DB_NAME": "forum",
+  "DB_USER": "root",
+  "DB_PASS": "961215",
+  "DB_HOST": "localhost",
+  "DB_PORT": "3306",
+  "SITE_DOMAIN": "http://118.89.241.172",
+  "EMAIL_HOST" : "smtp.sina.com",
+  "EMAIL_PORT" : 25,
+  "EMAIL_HOST_USER" : "",
+  "EMAIL_HOST_PASSWORD" : "",
+  "EMAIL_USE_TLS" : true
+}

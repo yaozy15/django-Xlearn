@@ -1,0 +1,35 @@
+from django.conf.urls import url
+from adminpage.views import *
+
+urlpatterns = [
+    url(r'^login/?$', Login.as_view(), name='login'),
+    url(r'^signup/?$', Signup.as_view(), name='signup'),
+    url(r'^logout/?$', Logout.as_view(), name='logout'),
+    url(r'^confirm/?$', Confirm.as_view(), name='confirm'),
+    url(r'^set-password/?$', SetPassword.as_view(), name='set-password'),
+    url(r'^homepage/?$', Homepage.as_view(), name='homepage'),
+    url(r'^account/?$', Account.as_view(), name='account'),
+    url(r'^reset-password/?$', ResetPassword.as_view(), name='reset-password'),
+    url(r'^homepage/data/?$', Data.as_view(), name='data'),
+    url(r'^homepage/company/?$', Company.as_view(), name='company'),
+    url(r'^homepage/logo/upload/?$', CompanyLogo.as_view(), name='company-logo-upload'),
+    url(r'^homepage/robot-lore/?$', RobotLore.as_view(), name='robot-lore'),
+    url(r'^homepage/robot-lore/add/?$', RobotLoreAdd.as_view(), name='lore-add'),
+    url(r'^homepage/robot-lore/delete/?$', RobotLoreDelete.as_view(), name='lore-delete'),
+    url(r'^homepage/quick-reply/?$', QuickReply.as_view(), name='quick-reply'),
+    url(r'^homepage/quick-reply/add/?$', QuickReplyAdd.as_view(), name='reply-add'),
+    url(r'^homepage/quick-reply/delete/?$', QuickReplyDelete.as_view(), name='reply-delete'),
+    url(r'^homepage/staff-setup/?$', StaffSetup.as_view(), name='staff-setup'),
+    url(r'^homepage/user-info/?$', UserInfo.as_view(), name='user-info'),
+    url(r'^homepage/user-info/add/?$', UserInfoAdd.as_view(), name='user-info-add'),
+    url(r'^homepage/user-info/delete/?$', UserInfoDelete.as_view(), name='user-info-delete'),
+    url(r'^homepage/list/?$', List.as_view(), name='list'),
+    url(r'^homepage/list/detail/?$', ListDetail.as_view(), name='list-detail'),
+    url(r'^homepage/list/create/?$', ListCreate.as_view(), name='list-create'),
+    url(r'^homepage/list/delete/?$', ListDelete.as_view(), name='list-delete'),
+    url(r'^homepage/list/message/?$', ListMessage.as_view(), name='list-message'),
+    url(r'^homepage/list/message/detail/?$', ListMessageDetail.as_view(), name='list-message-detail'),
+    url(r'^homepage/robot-info/?$', RobotInfo.as_view(), name='robot-info'),
+    url(r'^robot-logo/upload/?$', RobotLogoUpload.as_view(), name='robot-logo-upload'),
+
+]
